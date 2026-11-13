@@ -1,0 +1,1557 @@
+{
+  "meta": {
+    "title": "Dawas Shlef - 45 s reel",
+    "version": "reel-final-v1",
+    "w": 1080,
+    "h": 1920,
+    "fps": 30,
+    "dur": 45.0,
+    "frames": 1350,
+    "frameRange": "F0-F1349 inclusive",
+    "clock": "voice",
+    "register": "editorial / clean UI, 30 fps, no motion blur",
+    "audio": "AI-generated narrator (ar-JO-TaimNeural, edge-tts) + synthesized score and SFX (tools/make_audio.py)",
+    "vo": {
+      "status": "MEASURED - TTS WordBoundary timings (tools/make_vo.py); AI-generated voice, not Mohammad Dawas"
+    },
+    "boxesFile": "capture3x/boxes.json",
+    "captureScale": 3,
+    "silenceNote": "VO lines were fitted to the approved picture; the save click sits in a planned pause.",
+    "note": "Approved animatic picture; VO and sound fitted to it."
+  },
+  "palette": {
+    "paper": "#f5f1e7",
+    "ink": "#23282a",
+    "celadon": "#6d8f7d",
+    "deepCeladon": "#4e6b5c",
+    "cinnabar": "#a44a3f",
+    "accentMeaning": "Cinnabar rings mark a user action (Copy, Save). Celadon ink marks what to look at."
+  },
+  "assets": {
+    "home": "capture3x/home-top.png",
+    "library": "capture3x/library-search.png",
+    "libraryPhosphor": "capture3x/library-phosphor.png",
+    "detail": "capture3x/detail-top.png",
+    "detailSource": "capture3x/detail-source.png",
+    "detailSaved": "capture3x/detail-saved.png",
+    "shelf": "capture3x/shelf-saved-4x.png",
+    "prompt": "capture3x/prompt-copy.png",
+    "promptCopied": "capture3x/prompt-copied.png",
+    "skill": "capture3x/skill-copy.png",
+    "learning": "capture3x/learning-top.png",
+    "chapters": "capture3x/learning-chapters.png",
+    "about": "capture3x/about-contact.png",
+    "cardPhosphor": "assets/previews/phosphor-icons.png",
+    "cardLucide": "assets/previews/lucide-icons.png",
+    "cardShadcn": "assets/previews/shadcn-design.png",
+    "iconBook": "assets/icons/book-open.svg"
+  },
+  "scenes": [
+    {
+      "id": "s01-scatter",
+      "start": 0.0,
+      "kind": "scatter",
+      "variant": "tabs",
+      "source": "Native paper tabs (abstract) + real site preview images",
+      "action": "Hook over scattered tabs (Tools / Prompts / Saved links) and three resource cards; everything gathers to the centre at 2.0 s",
+      "gatherAt": 2.0,
+      "beats": {
+        "settled": 0.75,
+        "gather": 2.0
+      },
+      "transitionOut": {
+        "type": "emerge",
+        "dur": 0.6,
+        "why": "the scattered finds collapse into the one place they now live: the real homepage"
+      },
+      "end": 2.6,
+      "frames": [
+        0,
+        77
+      ]
+    },
+    {
+      "id": "s02-home",
+      "start": 2.6,
+      "kind": "ui",
+      "img": "home",
+      "source": "capture3x/home-top.png (live local site, 540x960 @3x)",
+      "action": "Homepage card; camera moves to the real wordmark, then to Good tools. Clearer thinking.",
+      "cam": [
+        {
+          "t": 2.6,
+          "cx": 270,
+          "cy": 480,
+          "z": 1.45,
+          "fx": 540,
+          "fy": 1080
+        },
+        {
+          "t": 4.1,
+          "cx": 270,
+          "cy": 480,
+          "z": 1.45,
+          "fx": 540,
+          "fy": 1080
+        },
+        {
+          "t": 4.8,
+          "cx": 180,
+          "cy": 42,
+          "z": 3.0,
+          "fx": 540,
+          "fy": 620
+        },
+        {
+          "t": 5.9,
+          "cx": 180,
+          "cy": 42,
+          "z": 3.0,
+          "fx": 540,
+          "fy": 620
+        },
+        {
+          "t": 6.6,
+          "cx": 270,
+          "cy": 330,
+          "z": 2.0,
+          "fx": 540,
+          "fy": 860
+        }
+      ],
+      "beats": {
+        "wordmark": 4.8,
+        "proposition": 6.6
+      },
+      "transitionOut": {
+        "type": "push-left",
+        "dur": 0.5,
+        "why": "Explore the library: one step into the collection"
+      },
+      "end": 9.0,
+      "frames": [
+        78,
+        269
+      ]
+    },
+    {
+      "id": "s03-library",
+      "start": 9.0,
+      "kind": "ui",
+      "img": "library",
+      "source": "capture3x/library-search.png",
+      "action": "Real Design search; underline on the query, slow push, circle on Websites 16",
+      "cam": [
+        {
+          "t": 9.0,
+          "cx": 270,
+          "cy": 480,
+          "z": 2.0,
+          "fx": 540,
+          "fy": 960
+        },
+        {
+          "t": 9.9,
+          "cx": 270,
+          "cy": 480,
+          "z": 2.0,
+          "fx": 540,
+          "fy": 960
+        },
+        {
+          "t": 12.0,
+          "cx": 270,
+          "cy": 470,
+          "z": 2.12,
+          "fx": 540,
+          "fy": 960
+        }
+      ],
+      "callouts": [
+        {
+          "type": "underline",
+          "rect": {
+            "x": 64,
+            "y": 40,
+            "w": 43,
+            "h": 30
+          },
+          "t": 9.7,
+          "dur": 0.3,
+          "color": "celadon"
+        },
+        {
+          "type": "ring",
+          "box": "library-search.websites",
+          "t": 12.2,
+          "dur": 0.35,
+          "color": "celadon"
+        }
+      ],
+      "beats": {
+        "query": 9.7,
+        "filter": 12.2
+      },
+      "transitionOut": {
+        "type": "push-up",
+        "dur": 0.45,
+        "why": "scrolling the same results down to Phosphor Icons"
+      },
+      "end": 13.4,
+      "frames": [
+        270,
+        401
+      ]
+    },
+    {
+      "id": "s03b-result",
+      "start": 13.4,
+      "kind": "ui",
+      "img": "libraryPhosphor",
+      "source": "capture3x/library-phosphor.png (same search, scrolled to the third result)",
+      "action": "The Phosphor Icons result card; push in and underline the title that the next shot opens",
+      "cam": [
+        {
+          "t": 13.4,
+          "cx": 270,
+          "cy": 480,
+          "z": 2.0,
+          "fx": 540,
+          "fy": 960
+        },
+        {
+          "t": 13.9,
+          "cx": 270,
+          "cy": 480,
+          "z": 2.0,
+          "fx": 540,
+          "fy": 960
+        },
+        {
+          "t": 14.5,
+          "cx": 220,
+          "cy": 470,
+          "z": 2.5,
+          "fx": 540,
+          "fy": 960
+        }
+      ],
+      "callouts": [
+        {
+          "type": "underline",
+          "box": "library-phosphor.title",
+          "t": 14.7,
+          "dur": 0.3,
+          "color": "celadon"
+        }
+      ],
+      "beats": {
+        "result": 14.7
+      },
+      "transitionOut": {
+        "type": "push-left",
+        "dur": 0.5,
+        "why": "opening Phosphor Icons goes one level deeper"
+      },
+      "end": 16.0,
+      "frames": [
+        402,
+        479
+      ]
+    },
+    {
+      "id": "s04-detail",
+      "start": 16.0,
+      "kind": "ui",
+      "img": "detail",
+      "source": "capture3x/detail-top.png",
+      "action": "Phosphor Icons detail: title and purpose",
+      "cam": [
+        {
+          "t": 16.0,
+          "cx": 270,
+          "cy": 480,
+          "z": 2.0,
+          "fx": 540,
+          "fy": 960
+        }
+      ],
+      "callouts": [
+        {
+          "type": "underline",
+          "rect": {
+            "x": 20,
+            "y": 235.5,
+            "w": 276,
+            "h": 51.8
+          },
+          "t": 16.6,
+          "dur": 0.3,
+          "color": "celadon"
+        }
+      ],
+      "beats": {
+        "title": 16.6
+      },
+      "transitionOut": {
+        "type": "push-up",
+        "dur": 0.45,
+        "why": "scrolling the same page down to its source credit"
+      },
+      "end": 17.5,
+      "frames": [
+        480,
+        524
+      ]
+    },
+    {
+      "id": "s05-source",
+      "start": 17.5,
+      "kind": "ui",
+      "img": "detailSource",
+      "source": "capture3x/detail-source.png",
+      "action": "Source credit (Helena Zhang and Tobias Fried) and the real Visit website link",
+      "cam": [
+        {
+          "t": 17.5,
+          "cx": 270,
+          "cy": 436,
+          "z": 2.2,
+          "fx": 540,
+          "fy": 960
+        }
+      ],
+      "callouts": [
+        {
+          "type": "underline",
+          "rect": {
+            "x": 46,
+            "y": 231,
+            "w": 179,
+            "h": 13
+          },
+          "t": 18.0,
+          "dur": 0.3,
+          "color": "celadon"
+        },
+        {
+          "type": "ring",
+          "box": "detail-source.visit",
+          "t": 18.35,
+          "dur": 0.35,
+          "color": "celadon"
+        }
+      ],
+      "beats": {
+        "credit": 18.0,
+        "visit": 18.35
+      },
+      "transitionOut": {
+        "type": "push-left",
+        "dur": 0.5,
+        "why": "the next kind of resource: a prompt"
+      },
+      "end": 19.0,
+      "frames": [
+        525,
+        569
+      ]
+    },
+    {
+      "id": "s06-prompt",
+      "start": 19.0,
+      "kind": "ui",
+      "img": "prompt",
+      "source": "capture3x/prompt-copy.png -> capture3x/prompt-copied.png (real click, real Copied feedback)",
+      "action": "Copy prompt ring, then the site's own Copied state and toast",
+      "cam": [
+        {
+          "t": 19.0,
+          "cx": 270,
+          "cy": 480,
+          "z": 2.0,
+          "fx": 540,
+          "fy": 960
+        }
+      ],
+      "swaps": [
+        {
+          "t": 20.05,
+          "img": "promptCopied"
+        }
+      ],
+      "callouts": [
+        {
+          "type": "ring",
+          "box": "prompt-copy.copy",
+          "t": 19.7,
+          "dur": 0.35,
+          "color": "cinnabar",
+          "pulseAt": 20.05
+        }
+      ],
+      "beats": {
+        "ring": 19.7,
+        "copied": 20.05
+      },
+      "transitionOut": {
+        "type": "push-up",
+        "dur": 0.45,
+        "why": "the same copy control on a skill"
+      },
+      "end": 21.3,
+      "frames": [
+        570,
+        638
+      ]
+    },
+    {
+      "id": "s07-skill",
+      "start": 21.3,
+      "kind": "ui",
+      "img": "skill",
+      "source": "capture3x/skill-copy.png",
+      "action": "Copy SKILL.md control and the full skill text (no click shown, no fake feedback)",
+      "cam": [
+        {
+          "t": 21.3,
+          "cx": 270,
+          "cy": 480,
+          "z": 2.0,
+          "fx": 540,
+          "fy": 960
+        }
+      ],
+      "callouts": [
+        {
+          "type": "ring",
+          "box": "skill-copy.copy",
+          "t": 21.9,
+          "dur": 0.35,
+          "color": "cinnabar"
+        }
+      ],
+      "beats": {
+        "ring": 21.9
+      },
+      "transitionOut": {
+        "type": "push-left",
+        "dur": 0.5,
+        "why": "back to a resource to keep it"
+      },
+      "end": 23.0,
+      "frames": [
+        639,
+        689
+      ]
+    },
+    {
+      "id": "s08-save",
+      "start": 23.0,
+      "kind": "ui",
+      "img": "detail",
+      "source": "capture3x/detail-top.png -> capture3x/detail-saved.png (real click)",
+      "action": "Close on Save, real state swap to Saved to my shelf, pull out to the header count and toast",
+      "cam": [
+        {
+          "t": 23.0,
+          "cx": 190,
+          "cy": 370,
+          "z": 2.3,
+          "fx": 540,
+          "fy": 960
+        },
+        {
+          "t": 24.9,
+          "cx": 190,
+          "cy": 370,
+          "z": 2.3,
+          "fx": 540,
+          "fy": 960
+        },
+        {
+          "t": 25.5,
+          "cx": 270,
+          "cy": 480,
+          "z": 2.0,
+          "fx": 540,
+          "fy": 960
+        }
+      ],
+      "swaps": [
+        {
+          "t": 24.15,
+          "img": "detailSaved"
+        }
+      ],
+      "callouts": [
+        {
+          "type": "ring",
+          "box": "detail-top.save",
+          "t": 23.75,
+          "dur": 0.35,
+          "color": "cinnabar",
+          "pulseAt": 24.15,
+          "until": 24.75
+        },
+        {
+          "type": "underline",
+          "box": "detail-saved.myshelf",
+          "t": 25.6,
+          "dur": 0.3,
+          "color": "celadon"
+        }
+      ],
+      "beats": {
+        "ring": 23.75,
+        "saved": 24.15,
+        "pullOut": 24.9
+      },
+      "transitionOut": {
+        "type": "push-up",
+        "dur": 0.45,
+        "why": "where the saved item goes: My shelf"
+      },
+      "end": 26.0,
+      "frames": [
+        690,
+        779
+      ]
+    },
+    {
+      "id": "s09-shelf",
+      "start": 26.0,
+      "kind": "ui",
+      "img": "shelf",
+      "source": "capture3x/shelf-saved-4x.png (4x, so the count holds at z 4 without upscaling)",
+      "action": "My shelf: 1 resource on your shelf, Saved only filter",
+      "cam": [
+        {
+          "t": 26.0,
+          "cx": 270,
+          "cy": 480,
+          "z": 2.0,
+          "fx": 540,
+          "fy": 960
+        },
+        {
+          "t": 26.3,
+          "cx": 270,
+          "cy": 480,
+          "z": 2.0,
+          "fx": 540,
+          "fy": 960
+        },
+        {
+          "t": 26.8,
+          "cx": 128,
+          "cy": 183,
+          "z": 4.0,
+          "fx": 540,
+          "fy": 700
+        },
+        {
+          "t": 28.9,
+          "cx": 128,
+          "cy": 192,
+          "z": 4.0,
+          "fx": 540,
+          "fy": 700
+        }
+      ],
+      "callouts": [
+        {
+          "type": "underline",
+          "box": "shelf-saved.count",
+          "t": 26.95,
+          "dur": 0.3,
+          "color": "celadon"
+        }
+      ],
+      "beats": {
+        "count": 26.95
+      },
+      "transitionOut": {
+        "type": "push-left",
+        "dur": 0.5,
+        "why": "from keeping to learning"
+      },
+      "end": 29.0,
+      "frames": [
+        780,
+        869
+      ]
+    },
+    {
+      "id": "s10-learning",
+      "start": 29.0,
+      "kind": "ui",
+      "img": "learning",
+      "source": "capture3x/learning-top.png",
+      "action": "Learning guide title, then the table of contents and the Original tutorial link",
+      "cam": [
+        {
+          "t": 29.0,
+          "cx": 270,
+          "cy": 480,
+          "z": 2.0,
+          "fx": 540,
+          "fy": 960
+        },
+        {
+          "t": 29.9,
+          "cx": 270,
+          "cy": 480,
+          "z": 2.0,
+          "fx": 540,
+          "fy": 960
+        },
+        {
+          "t": 31.9,
+          "cx": 270,
+          "cy": 440,
+          "z": 2.12,
+          "fx": 540,
+          "fy": 960
+        },
+        {
+          "t": 32.5,
+          "cx": 150,
+          "cy": 840,
+          "z": 3.0,
+          "fx": 540,
+          "fy": 960
+        }
+      ],
+      "callouts": [
+        {
+          "type": "underline",
+          "rect": {
+            "x": 280,
+            "y": 97,
+            "w": 52,
+            "h": 16
+          },
+          "t": 29.7,
+          "dur": 0.3,
+          "color": "celadon"
+        },
+        {
+          "type": "ring",
+          "box": "learning-top.original",
+          "t": 32.8,
+          "dur": 0.35,
+          "color": "celadon"
+        }
+      ],
+      "beats": {
+        "section": 29.7,
+        "toc": 32.5,
+        "original": 32.8
+      },
+      "transitionOut": {
+        "type": "push-up",
+        "dur": 0.45,
+        "why": "scrolling the same guide to its chapter map"
+      },
+      "end": 33.4,
+      "frames": [
+        870,
+        1001
+      ]
+    },
+    {
+      "id": "s11-chapters",
+      "start": 33.4,
+      "kind": "ui",
+      "img": "chapters",
+      "source": "capture3x/learning-chapters.png",
+      "action": "A map of the nine chapters",
+      "cam": [
+        {
+          "t": 33.4,
+          "cx": 179,
+          "cy": 330,
+          "z": 2.4,
+          "fx": 540,
+          "fy": 960
+        }
+      ],
+      "callouts": [
+        {
+          "type": "underline",
+          "rect": {
+            "x": 20,
+            "y": 57.1,
+            "w": 318,
+            "h": 33.5
+          },
+          "t": 33.9,
+          "dur": 0.3,
+          "color": "celadon"
+        }
+      ],
+      "beats": {
+        "map": 33.9
+      },
+      "transitionOut": {
+        "type": "push-left",
+        "dur": 0.5,
+        "why": "who made the shelf"
+      },
+      "end": 35.0,
+      "frames": [
+        1002,
+        1049
+      ]
+    },
+    {
+      "id": "s12-about",
+      "start": 35.0,
+      "kind": "ui",
+      "img": "about",
+      "source": "capture3x/about-contact.png",
+      "action": "The real profile area and @dawas_tech (photo is static, never animated)",
+      "cam": [
+        {
+          "t": 35.0,
+          "cx": 200,
+          "cy": 400,
+          "z": 2.4,
+          "fx": 540,
+          "fy": 960
+        },
+        {
+          "t": 37.9,
+          "cx": 200,
+          "cy": 410,
+          "z": 2.5,
+          "fx": 540,
+          "fy": 960
+        }
+      ],
+      "callouts": [
+        {
+          "type": "ring",
+          "box": "about-contact.insta",
+          "t": 35.8,
+          "dur": 0.35,
+          "color": "celadon"
+        }
+      ],
+      "beats": {
+        "insta": 35.8
+      },
+      "transitionOut": {
+        "type": "fade",
+        "dur": 0.5,
+        "why": "from the real profile to the curator's own line"
+      },
+      "end": 38.0,
+      "frames": [
+        1050,
+        1139
+      ]
+    },
+    {
+      "id": "s13-creator",
+      "start": 38.0,
+      "kind": "creator",
+      "source": "Native paper surface",
+      "action": "Identity line محمد دوّاس / Mohammad Dawas",
+      "beats": {
+        "name": 38.15
+      },
+      "transitionOut": {
+        "type": "rise",
+        "dur": 0.6,
+        "why": "the purpose line resolves into the one action"
+      },
+      "end": 40.0,
+      "frames": [
+        1140,
+        1199
+      ]
+    },
+    {
+      "id": "s14-cta",
+      "start": 40.0,
+      "kind": "cta",
+      "cta": {
+        "creator": "Collected by Mohammad Dawas",
+        "line": "اختار أول مورد يفيد مشروعك",
+        "overlay": "اكتشف. افهم. احفظ.",
+        "url": "dawas-shelf.vercel.app"
+      },
+      "source": "Native end card",
+      "action": "Wordmark, creator, one CTA, public URL; stable hold from 43 s",
+      "beats": {
+        "wordmark": 40.0,
+        "line": 40.6,
+        "url": 41.2,
+        "hold": 43.0
+      },
+      "end": 45.0,
+      "frames": [
+        1200,
+        1349
+      ]
+    }
+  ],
+  "hero": {
+    "t": 24.15,
+    "what": "Save becomes Saved to my shelf (real captured state)"
+  },
+  "reads": [
+    {
+      "what": "hook over scattered tabs",
+      "from": 0.0,
+      "to": 2.0
+    },
+    {
+      "what": "real wordmark",
+      "from": 4.8,
+      "to": 5.9
+    },
+    {
+      "what": "Good tools. Clearer thinking.",
+      "from": 6.6,
+      "to": 9.0
+    },
+    {
+      "what": "Design search + Websites filter",
+      "from": 9.7,
+      "to": 12.9
+    },
+    {
+      "what": "Noiced result",
+      "from": 13.6,
+      "to": 16.0
+    },
+    {
+      "what": "source credit + Visit website",
+      "from": 18.0,
+      "to": 19.0
+    },
+    {
+      "what": "Copied feedback",
+      "from": 20.05,
+      "to": 21.3
+    },
+    {
+      "what": "Saved to my shelf",
+      "from": 24.15,
+      "to": 24.9
+    },
+    {
+      "what": "1 resource on your shelf",
+      "from": 26.95,
+      "to": 29.0
+    },
+    {
+      "what": "A map of the nine chapters",
+      "from": 33.9,
+      "to": 35.0
+    },
+    {
+      "what": "@dawas_tech",
+      "from": 35.8,
+      "to": 38.0
+    },
+    {
+      "what": "public URL",
+      "from": 41.5,
+      "to": 45.0
+    }
+  ],
+  "texts": [
+    {
+      "id": "hook",
+      "role": "hook",
+      "type": "arabic",
+      "text": "مصادر كثيرة… وين البداية؟",
+      "from": 0.0,
+      "to": 3.9,
+      "px": 88,
+      "weight": 700,
+      "y": 330,
+      "box": [
+        90,
+        245,
+        900,
+        120
+      ]
+    },
+    {
+      "id": "url-early",
+      "role": "cta",
+      "type": "tag",
+      "text": "dawas-shelf.vercel.app",
+      "from": 0.5,
+      "to": 2.6,
+      "px": 48,
+      "y": 1450,
+      "box": [
+        290,
+        1405,
+        500,
+        90
+      ]
+    },
+    {
+      "id": "wordmark-capture",
+      "role": "brand",
+      "draw": false,
+      "text": "Dawas Shlef.",
+      "from": 4.8,
+      "to": 6.6,
+      "note": "the real wordmark inside the home capture"
+    },
+    {
+      "id": "cta-wordmark",
+      "role": "brand",
+      "draw": false,
+      "text": "Dawas Shlef.",
+      "from": 40.0,
+      "to": 45.0,
+      "px": 150
+    },
+    {
+      "id": "cta-url",
+      "role": "cta",
+      "draw": false,
+      "text": "dawas-shelf.vercel.app",
+      "from": 41.2,
+      "to": 45.0,
+      "px": 66,
+      "box": [
+        190,
+        1228,
+        700,
+        120
+      ]
+    },
+    {
+      "id": "cta-line",
+      "role": "line",
+      "draw": false,
+      "text": "اختار أول مورد يفيد مشروعك",
+      "from": 40.6,
+      "to": 45.0,
+      "px": 80
+    }
+  ],
+  "captions": [
+    {
+      "id": "c-brand",
+      "text": "مكتبة مصادر بتساعدك\nتبلّش بالذكاء الاصطناعي",
+      "from": 6.8,
+      "to": 8.9,
+      "px": 54,
+      "y": 1462
+    },
+    {
+      "id": "c-lib",
+      "text": "مواقع، مهارات،\nبرومبتات، وخطوات شغل",
+      "from": 9.6,
+      "to": 13.3,
+      "px": 54,
+      "y": 1462
+    },
+    {
+      "id": "c-search",
+      "text": "ابحث • فلتر • اكتشف",
+      "from": 13.5,
+      "to": 15.8,
+      "px": 54,
+      "y": 1462
+    },
+    {
+      "id": "c-detail",
+      "text": "افهم شو بفيدك، وشوف مصدره",
+      "from": 16.4,
+      "to": 18.9,
+      "px": 54,
+      "y": 1462
+    },
+    {
+      "id": "c-copy",
+      "text": "النص جاهز تنسخه وتعدّله",
+      "from": 19.4,
+      "to": 21.65,
+      "px": 54,
+      "y": 1462
+    },
+    {
+      "id": "c-save",
+      "text": "واللي بعجبك، احفظه في My shelf",
+      "from": 21.85,
+      "to": 25.9,
+      "px": 54,
+      "y": 1462
+    },
+    {
+      "id": "c-shelf",
+      "text": "محفوظ على نفس المتصفح",
+      "from": 26.4,
+      "to": 28.9,
+      "px": 54,
+      "y": 1462
+    },
+    {
+      "id": "c-learn",
+      "text": "وبقسم Learning،\nدليل عملي لهندسة الأوامر",
+      "from": 29.4,
+      "to": 32.0,
+      "px": 54,
+      "y": 1462
+    },
+    {
+      "id": "c-sources",
+      "text": "مع روابط للدروس الأصلية",
+      "from": 32.3,
+      "to": 34.9,
+      "px": 54,
+      "y": 1462
+    },
+    {
+      "id": "c-about",
+      "text": "جمعها محمد دوّاس، والفكرة بسيطة",
+      "from": 35.1,
+      "to": 37.75,
+      "px": 54,
+      "y": 1462
+    },
+    {
+      "id": "c-purpose",
+      "text": "تشتّت أقل، وفائدة أوضح",
+      "from": 37.95,
+      "to": 40.2,
+      "px": 54,
+      "y": 1462
+    }
+  ],
+  "terms": [
+    "Dawas Shlef"
+  ],
+  "vo": [
+    {
+      "text": "مصادر كثيرة، وين البداية؟",
+      "start": 0.104,
+      "file": "vo/reel/00.mp3",
+      "words": [
+        {
+          "w": "مصادر",
+          "t": 0.2,
+          "end": 0.744
+        },
+        {
+          "w": "كثيرة",
+          "t": 0.756,
+          "end": 1.369
+        },
+        {
+          "w": "وين",
+          "t": 1.624,
+          "end": 1.913
+        },
+        {
+          "w": "البداية",
+          "t": 1.925,
+          "end": 2.538
+        }
+      ]
+    },
+    {
+      "text": "هاي دوّاس شِلف.",
+      "start": 3.104,
+      "file": "vo/reel/01.mp3",
+      "words": [
+        {
+          "w": "هاي",
+          "t": 3.2,
+          "end": 3.351
+        },
+        {
+          "w": "دوّاس",
+          "t": 3.397,
+          "end": 3.721
+        },
+        {
+          "w": "شِلف",
+          "t": 3.721,
+          "end": 4.138
+        }
+      ]
+    },
+    {
+      "text": "مكتبة مصادر بتساعدك تبلّش بالذكاء الاصطناعي.",
+      "start": 6.104,
+      "file": "vo/reel/02.mp3",
+      "words": [
+        {
+          "w": "مكتبة",
+          "t": 6.2,
+          "end": 6.71
+        },
+        {
+          "w": "مصادر",
+          "t": 6.71,
+          "end": 7.196
+        },
+        {
+          "w": "بتساعدك",
+          "t": 7.196,
+          "end": 7.913
+        },
+        {
+          "w": "تبلّش",
+          "t": 7.913,
+          "end": 8.249
+        },
+        {
+          "w": "بالذكاء",
+          "t": 8.272,
+          "end": 8.781
+        },
+        {
+          "w": "الاصطناعي",
+          "t": 8.804,
+          "end": 9.418
+        }
+      ]
+    },
+    {
+      "text": "مواقع، مهارات، برومبتات، وخطوات شغل.",
+      "start": 9.554,
+      "file": "vo/reel/03.mp3",
+      "words": [
+        {
+          "w": "مواقع",
+          "t": 9.65,
+          "end": 10.252
+        },
+        {
+          "w": "مهارات",
+          "t": 10.553,
+          "end": 11.143
+        },
+        {
+          "w": "برومبتات",
+          "t": 11.479,
+          "end": 12.023
+        },
+        {
+          "w": "وخطوات",
+          "t": 12.243,
+          "end": 12.856
+        },
+        {
+          "w": "شغل",
+          "t": 12.868,
+          "end": 13.25
+        }
+      ]
+    },
+    {
+      "text": "ابحث، فلتر، واكتشف.",
+      "start": 13.404,
+      "file": "vo/reel/04.mp3",
+      "words": [
+        {
+          "w": "ابحث",
+          "t": 13.5,
+          "end": 13.986
+        },
+        {
+          "w": "فلتر",
+          "t": 14.264,
+          "end": 14.658
+        },
+        {
+          "w": "واكتشف",
+          "t": 14.935,
+          "end": 15.503
+        }
+      ]
+    },
+    {
+      "text": "افهم شو بفيدك، وشوف مصدره.",
+      "start": 16.304,
+      "file": "vo/reel/05.mp3",
+      "words": [
+        {
+          "w": "افهم",
+          "t": 16.4,
+          "end": 16.771
+        },
+        {
+          "w": "شو",
+          "t": 16.771,
+          "end": 16.956
+        },
+        {
+          "w": "بفيدك",
+          "t": 16.956,
+          "end": 17.407
+        },
+        {
+          "w": "وشوف",
+          "t": 17.789,
+          "end": 18.183
+        },
+        {
+          "w": "مصدره",
+          "t": 18.183,
+          "end": 18.704
+        }
+      ]
+    },
+    {
+      "text": "والنص جاهز، تنسخه وتعدّله.",
+      "start": 19.054,
+      "file": "vo/reel/06.mp3",
+      "words": [
+        {
+          "w": "والنص",
+          "t": 19.15,
+          "end": 19.648
+        },
+        {
+          "w": "جاهز",
+          "t": 19.648,
+          "end": 20.157
+        },
+        {
+          "w": "تنسخه",
+          "t": 20.4,
+          "end": 20.898
+        },
+        {
+          "w": "وتعدّله",
+          "t": 20.898,
+          "end": 21.592
+        }
+      ]
+    },
+    {
+      "text": "واللي بعجبك، احفظه.",
+      "start": 21.754,
+      "file": "vo/reel/07.mp3",
+      "words": [
+        {
+          "w": "واللي",
+          "t": 21.85,
+          "end": 22.186
+        },
+        {
+          "w": "بعجبك",
+          "t": 22.221,
+          "end": 22.741
+        },
+        {
+          "w": "احفظه",
+          "t": 22.985,
+          "end": 23.494
+        }
+      ]
+    },
+    {
+      "text": "بينحفظ على My shelf، بنفس المتصفح.",
+      "start": 24.604,
+      "file": "vo/reel/08.mp3",
+      "words": [
+        {
+          "w": "بينحفظ",
+          "t": 24.7,
+          "end": 25.372
+        },
+        {
+          "w": "على",
+          "t": 25.372,
+          "end": 25.557
+        },
+        {
+          "w": "My",
+          "t": 25.557,
+          "end": 25.707
+        },
+        {
+          "w": "shelf",
+          "t": 25.707,
+          "end": 26.112
+        },
+        {
+          "w": "بنفس",
+          "t": 26.436,
+          "end": 26.841
+        },
+        {
+          "w": "المتصفح",
+          "t": 26.865,
+          "end": 27.594
+        }
+      ]
+    },
+    {
+      "text": "وبقسم Learning، دليل عملي لهندسة الأوامر، مع روابط للدروس الأصلية.",
+      "start": 29.304,
+      "file": "vo/reel/09.mp3",
+      "words": [
+        {
+          "w": "وبقسم",
+          "t": 29.4,
+          "end": 29.967
+        },
+        {
+          "w": "Learning",
+          "t": 29.967,
+          "end": 30.396
+        },
+        {
+          "w": "دليل",
+          "t": 30.662,
+          "end": 31.09
+        },
+        {
+          "w": "عملي",
+          "t": 31.09,
+          "end": 31.391
+        },
+        {
+          "w": "لهندسة",
+          "t": 31.449,
+          "end": 31.993
+        },
+        {
+          "w": "الأوامر",
+          "t": 32.004,
+          "end": 32.491
+        },
+        {
+          "w": "مع",
+          "t": 32.826,
+          "end": 33.035
+        },
+        {
+          "w": "روابط",
+          "t": 33.046,
+          "end": 33.486
+        },
+        {
+          "w": "للدروس",
+          "t": 33.486,
+          "end": 33.984
+        },
+        {
+          "w": "الأصلية",
+          "t": 33.995,
+          "end": 34.585
+        }
+      ]
+    },
+    {
+      "text": "جمعها محمد دوّاس، والفكرة بسيطة:",
+      "start": 34.704,
+      "file": "vo/reel/10.mp3",
+      "words": [
+        {
+          "w": "جمعها",
+          "t": 34.8,
+          "end": 35.24
+        },
+        {
+          "w": "محمد",
+          "t": 35.24,
+          "end": 35.715
+        },
+        {
+          "w": "دوّاس",
+          "t": 35.715,
+          "end": 36.247
+        },
+        {
+          "w": "والفكرة",
+          "t": 36.536,
+          "end": 37.092
+        },
+        {
+          "w": "بسيطة",
+          "t": 37.104,
+          "end": 37.705
+        }
+      ]
+    },
+    {
+      "text": "تشتّت أقل، وفائدة أوضح.",
+      "start": 37.804,
+      "file": "vo/reel/11.mp3",
+      "words": [
+        {
+          "w": "تشتّت",
+          "t": 37.9,
+          "end": 38.41
+        },
+        {
+          "w": "أقل",
+          "t": 38.421,
+          "end": 38.873
+        },
+        {
+          "w": "وفائدة",
+          "t": 39.231,
+          "end": 39.903
+        },
+        {
+          "w": "أوضح",
+          "t": 39.903,
+          "end": 40.342
+        }
+      ]
+    },
+    {
+      "text": "واختار أول مورد يفيد مشروعك.",
+      "start": 41.704,
+      "file": "vo/reel/12.mp3",
+      "words": [
+        {
+          "w": "واختار",
+          "t": 41.8,
+          "end": 42.286
+        },
+        {
+          "w": "أول",
+          "t": 42.286,
+          "end": 42.576
+        },
+        {
+          "w": "مورد",
+          "t": 42.587,
+          "end": 42.992
+        },
+        {
+          "w": "يفيد",
+          "t": 42.992,
+          "end": 43.363
+        },
+        {
+          "w": "مشروعك",
+          "t": 43.363,
+          "end": 43.895
+        }
+      ]
+    }
+  ],
+  "silences": [
+    {
+      "from": 23.6,
+      "to": 24.12,
+      "why": "pause before the save click"
+    }
+  ],
+  "sfx": [
+    {
+      "t": 20.05,
+      "kind": "tick",
+      "why": "real Copied state"
+    },
+    {
+      "t": 24.15,
+      "kind": "hit",
+      "why": "hero: Saved to my shelf"
+    },
+    {
+      "t": 26.95,
+      "kind": "tick",
+      "why": "shelf count"
+    },
+    {
+      "t": 41.3,
+      "kind": "chime",
+      "why": "public URL lands"
+    }
+  ],
+  "cuts": [],
+  "briefSchedule": [
+    {
+      "seconds": "0.00-2.00",
+      "frames": "F0-F59",
+      "scenes": "s01-scatter"
+    },
+    {
+      "seconds": "2.00-4.00",
+      "frames": "F60-F119",
+      "scenes": "s01-scatter / s02-home"
+    },
+    {
+      "seconds": "4.00-6.00",
+      "frames": "F120-F179",
+      "scenes": "s02-home (wordmark)"
+    },
+    {
+      "seconds": "6.00-9.00",
+      "frames": "F180-F269",
+      "scenes": "s02-home (proposition)"
+    },
+    {
+      "seconds": "9.00-12.00",
+      "frames": "F270-F359",
+      "scenes": "s03-library (search)"
+    },
+    {
+      "seconds": "12.00-16.00",
+      "frames": "F360-F479",
+      "scenes": "s03-library (filter) / s03b-result"
+    },
+    {
+      "seconds": "16.00-19.00",
+      "frames": "F480-F569",
+      "scenes": "s04-detail / s05-source"
+    },
+    {
+      "seconds": "19.00-23.00",
+      "frames": "F570-F689",
+      "scenes": "s06-prompt / s07-skill"
+    },
+    {
+      "seconds": "23.00-26.00",
+      "frames": "F690-F779",
+      "scenes": "s08-save"
+    },
+    {
+      "seconds": "26.00-29.00",
+      "frames": "F780-F869",
+      "scenes": "s09-shelf"
+    },
+    {
+      "seconds": "29.00-32.00",
+      "frames": "F870-F959",
+      "scenes": "s10-learning"
+    },
+    {
+      "seconds": "32.00-35.00",
+      "frames": "F960-F1049",
+      "scenes": "s10-learning (toc) / s11-chapters"
+    },
+    {
+      "seconds": "35.00-38.00",
+      "frames": "F1050-F1139",
+      "scenes": "s12-about"
+    },
+    {
+      "seconds": "38.00-40.00",
+      "frames": "F1140-F1199",
+      "scenes": "s13-creator"
+    },
+    {
+      "seconds": "40.00-43.00",
+      "frames": "F1200-F1289",
+      "scenes": "s14-cta"
+    },
+    {
+      "seconds": "43.00-45.00",
+      "frames": "F1290-F1349",
+      "scenes": "s14-cta (stable hold)"
+    }
+  ]
+}

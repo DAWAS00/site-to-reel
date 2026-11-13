@@ -1,0 +1,45 @@
+{
+  "_help": "Fill in every value below, or delete the key. tools/build_timelines.py copies this file into each timeline, and reel.js reads the palette, fonts and wordmark from there. Keep claims to what the brief or site states.",
+  "name": "BRAND NAME (exact spelling)",
+  "wordmark": "Brand Name.",
+  "wordmarkIcon": "iconBrand",
+  "creator": {
+    "primary": "CREATOR NAME IN THE CAPTION LANGUAGE",
+    "secondary": "Creator Name",
+    "credit": "Made by Creator Name"
+  },
+  "publicUrl": "example.com",
+  "localUrl": "http://127.0.0.1:4321",
+  "direction": "rtl",
+  "captionLanguage": "ar",
+  "palette": {
+    "paper": "#f5f1e7",
+    "ink": "#23282a",
+    "accent": "#6d8f7d",
+    "accentDeep": "#4e6b5c",
+    "action": "#a44a3f",
+    "card": "#fbf9f3",
+    "accentMeaning": "action rings mark a user action (Copy, Save); accent marks what to look at"
+  },
+  "fonts": {
+    "script": { "family": "Dubai", "files": [
+      { "url": "assets/fonts/DUBAI-MEDIUM.TTF", "weight": 500 },
+      { "url": "assets/fonts/DUBAI-BOLD.TTF", "weight": 700 } ] },
+    "latin": { "family": "Cormorant Garamond", "files": [
+      { "url": "assets/fonts/cormorant-garamond-latin-500-normal.woff2", "weight": 500 },
+      { "url": "assets/fonts/cormorant-garamond-latin-600-normal.woff2", "weight": 600 } ] }
+  },
+  "claims": [
+    "Only facts the brief or the site itself states, one per line"
+  ],
+  "neverSay": [
+    "Anything stronger than the source, e.g. free / best / no account, unless a claim above says so"
+  ],
+  "voice": {
+    "engine": "edge-tts",
+    "voice": "ar-JO-TaimNeural",
+    "rate": "+8%",
+    "disclosure": "AI-generated narrator voice. Not the creator."
+  },
+  "safeArea": { "x": [90, 990], "y": [200, 1500], "captionBand": [1300, 1500] }
+}

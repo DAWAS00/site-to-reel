@@ -1,0 +1,51 @@
+{
+  "name": "Dawas Shlef",
+  "wordmark": "Dawas Shlef.",
+  "wordmarkIcon": "iconBook",
+  "creator": {
+    "primary": "محمد دوّاس",
+    "secondary": "Mohammad Dawas",
+    "credit": "Collected by Mohammad Dawas"
+  },
+  "publicUrl": "dawas-shelf.vercel.app",
+  "localUrl": "http://127.0.0.1:4321",
+  "direction": "rtl",
+  "captionLanguage": "ar-JO",
+  "palette": {
+    "paper": "#f5f1e7",
+    "ink": "#23282a",
+    "accent": "#6d8f7d",
+    "accentDeep": "#4e6b5c",
+    "action": "#a44a3f",
+    "card": "#fbf9f3",
+    "accentMeaning": "Cinnabar rings mark a user action (Copy, Save). Celadon ink marks what to look at."
+  },
+  "fonts": {
+    "script": { "family": "Dubai", "files": [
+      { "url": "assets/fonts/DUBAI-MEDIUM.TTF", "weight": 500 },
+      { "url": "assets/fonts/DUBAI-BOLD.TTF", "weight": 700 } ] },
+    "latin": { "family": "Cormorant Garamond", "files": [
+      { "url": "assets/fonts/cormorant-garamond-latin-500-normal.woff2", "weight": 500 },
+      { "url": "assets/fonts/cormorant-garamond-latin-600-normal.woff2", "weight": 600 } ] }
+  },
+  "claims": [
+    "The shelf is saved in the browser (browser-local)",
+    "Skills are not installed automatically",
+    "Not every tool is free",
+    "24 resources",
+    "Learning is an independent guide with links to the original tutorials"
+  ],
+  "neverSay": [
+    "no account needed (not in the brief)",
+    "a Contribute flow",
+    "first person as Mohammad from a generated voice",
+    "link in the description (Reels have none)"
+  ],
+  "voice": {
+    "engine": "edge-tts",
+    "voice": "ar-JO-TaimNeural",
+    "rate": "+8%",
+    "disclosure": "AI-generated narrator voice. Not Mohammad Dawas."
+  },
+  "safeArea": { "x": [90, 990], "y": [200, 1500], "captionBand": [1300, 1500] }
+}

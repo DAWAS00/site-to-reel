@@ -1,0 +1,638 @@
+{
+  "meta": {
+    "title": "Dawas Shlef - 15 s ad",
+    "version": "ad-final-v1",
+    "w": 1080,
+    "h": 1920,
+    "fps": 30,
+    "dur": 15.0,
+    "frames": 450,
+    "frameRange": "F0-F449 inclusive",
+    "clock": "voice",
+    "register": "editorial / clean UI, 30 fps, no motion blur",
+    "audio": "AI-generated narrator (ar-JO-TaimNeural, edge-tts) + synthesized score and SFX (tools/make_audio.py)",
+    "vo": {
+      "status": "MEASURED - TTS WordBoundary timings (tools/make_vo.py); AI-generated voice, not Mohammad Dawas"
+    },
+    "boxesFile": "capture3x/boxes.json",
+    "captureScale": 3,
+    "silenceNote": "VO lines were fitted to the approved picture; the save click sits in a planned pause.",
+    "note": "Composed separately from the 45 s reel; not a speed-up."
+  },
+  "palette": {
+    "paper": "#f5f1e7",
+    "ink": "#23282a",
+    "celadon": "#6d8f7d",
+    "deepCeladon": "#4e6b5c",
+    "cinnabar": "#a44a3f",
+    "accentMeaning": "Cinnabar rings mark a user action (Copy, Save). Celadon ink marks what to look at."
+  },
+  "assets": {
+    "home": "capture3x/home-top.png",
+    "library": "capture3x/library-search.png",
+    "libraryPhosphor": "capture3x/library-phosphor.png",
+    "detail": "capture3x/detail-top.png",
+    "detailSource": "capture3x/detail-source.png",
+    "detailSaved": "capture3x/detail-saved.png",
+    "shelf": "capture3x/shelf-saved-4x.png",
+    "prompt": "capture3x/prompt-copy.png",
+    "promptCopied": "capture3x/prompt-copied.png",
+    "skill": "capture3x/skill-copy.png",
+    "learning": "capture3x/learning-top.png",
+    "chapters": "capture3x/learning-chapters.png",
+    "about": "capture3x/about-contact.png",
+    "cardPhosphor": "assets/previews/phosphor-icons.png",
+    "cardLucide": "assets/previews/lucide-icons.png",
+    "cardShadcn": "assets/previews/shadcn-design.png",
+    "iconBook": "assets/icons/book-open.svg"
+  },
+  "scenes": [
+    {
+      "id": "a01-cards",
+      "start": 0.0,
+      "kind": "scatter",
+      "variant": "cards",
+      "alignAt": 1.9,
+      "source": "Real site preview images on native paper cards (approved opening test)",
+      "action": "Hook over three resource cards; cards align at 2.0 s with the wordmark and public URL",
+      "beats": {
+        "settled": 0.75,
+        "align": 1.9,
+        "wordmark": 2.8
+      },
+      "transitionOut": {
+        "type": "rise",
+        "dur": 0.6,
+        "why": "the organised column becomes the real library it stands for"
+      },
+      "end": 3.9,
+      "frames": [
+        0,
+        116
+      ]
+    },
+    {
+      "id": "a02-search",
+      "start": 3.9,
+      "kind": "ui",
+      "img": "library",
+      "source": "capture3x/library-search.png",
+      "action": "Real Design search and Websites filter",
+      "cam": [
+        {
+          "t": 3.9,
+          "cx": 270,
+          "cy": 480,
+          "z": 1.76,
+          "fx": 540,
+          "fy": 1060
+        },
+        {
+          "t": 4.25,
+          "cx": 270,
+          "cy": 480,
+          "z": 1.76,
+          "fx": 540,
+          "fy": 1060
+        },
+        {
+          "t": 4.75,
+          "cx": 270,
+          "cy": 480,
+          "z": 2.0,
+          "fx": 540,
+          "fy": 960
+        }
+      ],
+      "callouts": [
+        {
+          "type": "underline",
+          "rect": {
+            "x": 64,
+            "y": 40,
+            "w": 43,
+            "h": 30
+          },
+          "t": 4.8,
+          "dur": 0.3,
+          "color": "celadon"
+        },
+        {
+          "type": "ring",
+          "box": "library-search.websites",
+          "t": 5.25,
+          "dur": 0.3,
+          "color": "celadon"
+        }
+      ],
+      "beats": {
+        "query": 4.8,
+        "filter": 5.25
+      },
+      "transitionOut": {
+        "type": "push-left",
+        "dur": 0.5,
+        "why": "open a prompt from the library"
+      },
+      "end": 5.9,
+      "frames": [
+        117,
+        176
+      ]
+    },
+    {
+      "id": "a03-prompt",
+      "start": 5.9,
+      "kind": "ui",
+      "img": "prompt",
+      "source": "capture3x/prompt-copy.png -> capture3x/prompt-copied.png (real click)",
+      "action": "Copy prompt ring, then the real Copied state",
+      "cam": [
+        {
+          "t": 5.9,
+          "cx": 270,
+          "cy": 480,
+          "z": 2.0,
+          "fx": 540,
+          "fy": 960
+        }
+      ],
+      "swaps": [
+        {
+          "t": 6.75,
+          "img": "promptCopied"
+        }
+      ],
+      "callouts": [
+        {
+          "type": "ring",
+          "box": "prompt-copy.copy",
+          "t": 6.4,
+          "dur": 0.35,
+          "color": "cinnabar",
+          "pulseAt": 6.75
+        }
+      ],
+      "beats": {
+        "ring": 6.4,
+        "copied": 6.75
+      },
+      "transitionOut": {
+        "type": "push-left",
+        "dur": 0.5,
+        "why": "keep a resource for later"
+      },
+      "end": 8.0,
+      "frames": [
+        177,
+        239
+      ]
+    },
+    {
+      "id": "a04-save",
+      "start": 8.0,
+      "kind": "ui",
+      "img": "detail",
+      "source": "capture3x/detail-top.png -> capture3x/detail-saved.png (real click)",
+      "action": "Save close-up, real Saved state, pull out to the header count",
+      "cam": [
+        {
+          "t": 8.0,
+          "cx": 190,
+          "cy": 370,
+          "z": 2.3,
+          "fx": 540,
+          "fy": 960
+        },
+        {
+          "t": 9.6,
+          "cx": 190,
+          "cy": 370,
+          "z": 2.3,
+          "fx": 540,
+          "fy": 960
+        },
+        {
+          "t": 10.1,
+          "cx": 270,
+          "cy": 480,
+          "z": 2.0,
+          "fx": 540,
+          "fy": 960
+        }
+      ],
+      "swaps": [
+        {
+          "t": 8.85,
+          "img": "detailSaved"
+        }
+      ],
+      "callouts": [
+        {
+          "type": "ring",
+          "box": "detail-top.save",
+          "t": 8.5,
+          "dur": 0.35,
+          "color": "cinnabar",
+          "pulseAt": 8.85,
+          "until": 9.45
+        },
+        {
+          "type": "underline",
+          "box": "detail-saved.myshelf",
+          "t": 10.15,
+          "dur": 0.3,
+          "color": "celadon"
+        }
+      ],
+      "beats": {
+        "ring": 8.5,
+        "saved": 8.85
+      },
+      "transitionOut": {
+        "type": "push-up",
+        "dur": 0.45,
+        "why": "where the saved item goes: My shelf"
+      },
+      "end": 10.4,
+      "frames": [
+        240,
+        311
+      ]
+    },
+    {
+      "id": "a05-shelf",
+      "start": 10.4,
+      "kind": "ui",
+      "img": "shelf",
+      "source": "capture3x/shelf-saved-4x.png (4x, so the count holds at z 4 without upscaling)",
+      "action": "1 resource on your shelf",
+      "cam": [
+        {
+          "t": 10.4,
+          "cx": 270,
+          "cy": 480,
+          "z": 2.0,
+          "fx": 540,
+          "fy": 960
+        },
+        {
+          "t": 10.85,
+          "cx": 128,
+          "cy": 183,
+          "z": 4.0,
+          "fx": 540,
+          "fy": 700
+        },
+        {
+          "t": 12.0,
+          "cx": 128,
+          "cy": 188,
+          "z": 4.0,
+          "fx": 540,
+          "fy": 700
+        }
+      ],
+      "callouts": [
+        {
+          "type": "underline",
+          "box": "shelf-saved.count",
+          "t": 11.0,
+          "dur": 0.3,
+          "color": "celadon"
+        }
+      ],
+      "beats": {
+        "count": 11.0
+      },
+      "transitionOut": {
+        "type": "fade",
+        "dur": 0.5,
+        "why": "from the shelf to the one place to start: the URL"
+      },
+      "end": 12.0,
+      "frames": [
+        312,
+        359
+      ]
+    },
+    {
+      "id": "a06-cta",
+      "start": 12.0,
+      "kind": "cta",
+      "cta": {
+        "creator": "Collected by Mohammad Dawas",
+        "line": "زور الموقع وجرّبه",
+        "overlay": "اكتشف. افهم. احفظ.",
+        "url": "dawas-shelf.vercel.app"
+      },
+      "source": "Native end card",
+      "action": "Wordmark, creator, CTA line, overlay, public URL",
+      "beats": {
+        "wordmark": 12.0,
+        "url": 13.2
+      },
+      "end": 15.0,
+      "frames": [
+        360,
+        449
+      ]
+    }
+  ],
+  "hero": {
+    "t": 8.85,
+    "what": "Save becomes Saved to my shelf"
+  },
+  "reads": [
+    {
+      "what": "hook + cards",
+      "from": 0.0,
+      "to": 2.0
+    },
+    {
+      "what": "wordmark + URL",
+      "from": 2.8,
+      "to": 4.4
+    },
+    {
+      "what": "Design search",
+      "from": 4.8,
+      "to": 5.9
+    },
+    {
+      "what": "Copied",
+      "from": 6.75,
+      "to": 8.0
+    },
+    {
+      "what": "Saved to my shelf",
+      "from": 8.85,
+      "to": 9.6
+    },
+    {
+      "what": "1 resource on your shelf",
+      "from": 11.0,
+      "to": 12.0
+    },
+    {
+      "what": "public URL",
+      "from": 13.2,
+      "to": 15.0
+    }
+  ],
+  "texts": [
+    {
+      "id": "hook",
+      "role": "hook",
+      "type": "arabic",
+      "text": "ضايع بين أدوات AI؟",
+      "from": 0.0,
+      "to": 2.5,
+      "px": 92,
+      "weight": 700,
+      "y": 360,
+      "box": [
+        90,
+        270,
+        900,
+        125
+      ]
+    },
+    {
+      "id": "wordmark",
+      "role": "brand",
+      "type": "wordmark",
+      "text": "Dawas Shlef.",
+      "from": 2.8,
+      "to": 4.4,
+      "px": 118,
+      "y": 322
+    },
+    {
+      "id": "url-early",
+      "role": "cta",
+      "type": "tag",
+      "text": "dawas-shelf.vercel.app",
+      "from": 2.9,
+      "to": 4.4,
+      "px": 48,
+      "y": 455,
+      "box": [
+        290,
+        410,
+        500,
+        90
+      ]
+    },
+    {
+      "id": "cta-wordmark",
+      "role": "brand",
+      "draw": false,
+      "text": "Dawas Shlef.",
+      "from": 12.0,
+      "to": 15.0,
+      "px": 150
+    },
+    {
+      "id": "cta-url",
+      "role": "cta",
+      "draw": false,
+      "text": "dawas-shelf.vercel.app",
+      "from": 13.2,
+      "to": 15.0,
+      "px": 66,
+      "box": [
+        190,
+        1228,
+        700,
+        120
+      ]
+    }
+  ],
+  "captions": [
+    {
+      "id": "c-what",
+      "text": "مواقع، مهارات، وبرومبتات بمكان واحد",
+      "from": 4.5,
+      "to": 7.9,
+      "px": 54,
+      "y": 1462
+    },
+    {
+      "id": "c-keep",
+      "text": "اكتشف اللي بناسبك،\nواحفظه لوقت تحتاجه",
+      "from": 8.3,
+      "to": 11.9,
+      "px": 54,
+      "y": 1462
+    }
+  ],
+  "terms": [
+    "Dawas Shlef"
+  ],
+  "vo": [
+    {
+      "text": "ضايع بين أدوات AI؟",
+      "start": 0.104,
+      "file": "vo/ad15/00.mp3",
+      "words": [
+        {
+          "w": "ضايع",
+          "t": 0.2,
+          "end": 0.652
+        },
+        {
+          "w": "بين",
+          "t": 0.663,
+          "end": 0.872
+        },
+        {
+          "w": "أدوات",
+          "t": 0.895,
+          "end": 1.335
+        },
+        {
+          "w": "AI",
+          "t": 1.346,
+          "end": 1.659
+        }
+      ]
+    },
+    {
+      "text": "دوّاس شِلف بيجمعلك مواقع، مهارات، وبرومبتات بمكان واحد.",
+      "start": 2.804,
+      "file": "vo/ad15/01.mp3",
+      "words": [
+        {
+          "w": "دوّاس",
+          "t": 2.9,
+          "end": 3.398
+        },
+        {
+          "w": "شِلف",
+          "t": 3.398,
+          "end": 3.629
+        },
+        {
+          "w": "بيجمعلك",
+          "t": 3.629,
+          "end": 4.312
+        },
+        {
+          "w": "مواقع",
+          "t": 4.312,
+          "end": 4.868
+        },
+        {
+          "w": "مهارات",
+          "t": 5.169,
+          "end": 5.736
+        },
+        {
+          "w": "وبرومبتات",
+          "t": 6.095,
+          "end": 6.685
+        },
+        {
+          "w": "بمكان",
+          "t": 6.685,
+          "end": 7.217
+        },
+        {
+          "w": "واحد",
+          "t": 7.217,
+          "end": 7.68
+        }
+      ]
+    },
+    {
+      "text": "اكتشف اللي بناسبك، واحفظه لوقت تحتاجه.",
+      "start": 9.054,
+      "file": "vo/ad15/02.mp3",
+      "words": [
+        {
+          "w": "اكتشف",
+          "t": 9.15,
+          "end": 9.671
+        },
+        {
+          "w": "اللي",
+          "t": 9.671,
+          "end": 9.914
+        },
+        {
+          "w": "بناسبك",
+          "t": 9.937,
+          "end": 10.516
+        },
+        {
+          "w": "واحفظه",
+          "t": 10.805,
+          "end": 11.268
+        },
+        {
+          "w": "لوقت",
+          "t": 11.291,
+          "end": 11.697
+        },
+        {
+          "w": "تحتاجه",
+          "t": 11.708,
+          "end": 12.31
+        }
+      ]
+    },
+    {
+      "text": "زور الموقع وجرّبه.",
+      "start": 12.404,
+      "file": "vo/ad15/03.mp3",
+      "words": [
+        {
+          "w": "زور",
+          "t": 12.5,
+          "end": 12.824
+        },
+        {
+          "w": "الموقع",
+          "t": 12.824,
+          "end": 13.276
+        },
+        {
+          "w": "وجرّبه",
+          "t": 13.276,
+          "end": 13.82
+        }
+      ]
+    }
+  ],
+  "silences": [
+    {
+      "from": 8.1,
+      "to": 8.82,
+      "why": "pause before the save click"
+    }
+  ],
+  "sfx": [
+    {
+      "t": 6.75,
+      "kind": "tick",
+      "why": "real Copied state"
+    },
+    {
+      "t": 8.85,
+      "kind": "hit",
+      "why": "hero: Saved to my shelf"
+    },
+    {
+      "t": 11.0,
+      "kind": "tick",
+      "why": "shelf count"
+    },
+    {
+      "t": 13.2,
+      "kind": "chime",
+      "why": "public URL lands"
+    }
+  ],
+  "cuts": []
+}

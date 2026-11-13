@@ -1,0 +1,9 @@
+node_modules/
+__pycache__/
+*.pyc
+frames*/
+out/
+capture3x/*.png
+vo/
+*.mp4
+*.wav

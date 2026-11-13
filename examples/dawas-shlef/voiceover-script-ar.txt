@@ -1,0 +1,36 @@
+Dawas Shlef - Jordanian Arabic voiceover (AS VOICED in reel-final.mp4 and ad-final-15s.mp4)
+Narrator: AI-generated voice, Microsoft neural TTS ar-JO-TaimNeural (edge-tts, rate +8%). NOT Mohammad Dawas, and never presented as him.
+The voice speaks about Mohammad in the third person only. Measured word timings: vo/reel.json, vo/ad15.json.
+Source of these lines: tools/make_vo.py (edit there and re-run to change the voice).
+
+45-second reel
+مصادر كثيرة، وين البداية؟
+هاي دوّاس شِلف.
+مكتبة مصادر بتساعدك تبلّش بالذكاء الاصطناعي.
+مواقع، مهارات، برومبتات، وخطوات شغل.
+ابحث، فلتر، واكتشف.
+افهم شو بفيدك، وشوف مصدره.
+والنص جاهز، تنسخه وتعدّله.
+واللي بعجبك، احفظه.
+[pause - save click]
+بينحفظ على My shelf، بنفس المتصفح.
+وبقسم Learning، دليل عملي لهندسة الأوامر، مع روابط للدروس الأصلية.
+جمعها محمد دوّاس، والفكرة بسيطة:
+تشتّت أقل، وفائدة أوضح.
+واختار أول مورد يفيد مشروعك.
+
+15-second ad
+ضايع بين أدوات AI؟
+دوّاس شِلف بيجمعلك مواقع، مهارات، وبرومبتات بمكان واحد.
+[pause - save click]
+اكتشف اللي بناسبك، واحفظه لوقت تحتاجه.
+زور الموقع وجرّبه.
+End card: dawas-shelf.vercel.app
+
+Changes from the earlier draft:
+- "أنا محمد دوّاس" became "جمعها محمد دوّاس", because a generated voice must not speak as Mohammad.
+- "بدون حساب" was cut because nothing in the brief supports that claim.
+- "الرابط بالوصف" was removed because Reels have no description link.
+- Lines were shortened to fit the approved picture.
+
+If Mohammad records his own voiceover later, replace vo/*.mp3 and re-run tools/build_timelines.py, make_audio.py and make_srt.py. Then re-encode.

@@ -1,0 +1,10 @@
+{
+ "_help": "earliest start (s), line, latest speech end (s). Fit lines to the approved picture; see tools/make_vo.py.",
+ "reel": {"timeline": "timeline.json", "lines": [
+  [0.2, "HOOK LINE, SAME WORDS AS THE ON-SCREEN HOOK", 2.75],
+  [3.2, "BRAND NAME LINE", 5.6]
+ ]},
+ "ad15": {"timeline": "timeline-ad15.json", "lines": [
+  [0.2, "HOOK LINE", 2.7]
+ ]}
+}

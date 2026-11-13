@@ -1,0 +1,352 @@
+{
+ "caps": {
+  "home-top": {
+   "url": "/",
+   "scrollY": 0,
+   "boxes": {
+    "logo": {
+     "x": 20,
+     "y": 29,
+     "w": 165.1,
+     "h": 27,
+     "text": "Dawas Shlef."
+    },
+    "hero": {
+     "x": 17,
+     "y": 217.5,
+     "w": 503,
+     "h": 145.8,
+     "text": "Good tools.\nClearer thinking."
+    },
+    "explore": {
+     "x": 20,
+     "y": 485.1,
+     "w": 182.8,
+     "h": 56,
+     "text": "Explore the library"
+    }
+   }
+  },
+  "library-search": {
+   "url": "/resources/?type=website&q=Design&sort=newest",
+   "scrollY": 527,
+   "boxes": {
+    "search": {
+     "x": 65,
+     "y": 40,
+     "w": 442,
+     "h": 30,
+     "text": "Design"
+    },
+    "websites": {
+     "x": 133.4,
+     "y": 98,
+     "w": 73.9,
+     "h": 44,
+     "text": "Websites\n16"
+    },
+    "skills": {
+     "x": 227.3,
+     "y": 98,
+     "w": 63.8,
+     "h": 44,
+     "text": "AI skills\n2"
+    },
+    "count": {
+     "x": 20,
+     "y": 205,
+     "w": 96,
+     "h": 26.5,
+     "text": "9 resources to explore"
+    },
+    "card": {
+     "x": 47,
+     "y": 604.7,
+     "w": 446,
+     "h": 33.5,
+     "text": "Noiced"
+    },
+    "cardDesc": {
+     "x": 47,
+     "y": 648.2,
+     "w": 446,
+     "h": 53.2,
+     "text": "A curated gallery of websites to spark ideas for layouts, ty"
+    }
+   }
+  },
+  "detail-top": {
+   "url": "/resources/phosphor-icons/",
+   "scrollY": 0,
+   "boxes": {
+    "title": {
+     "x": 20,
+     "y": 235.5,
+     "w": 500,
+     "h": 51.8,
+     "text": "Phosphor Icons"
+    },
+    "purpose": {
+     "x": 20,
+     "y": 302.4,
+     "w": 500,
+     "h": 51.8,
+     "text": "A flexible icon family with multiple weights for interfaces,"
+    },
+    "save": {
+     "x": 20,
+     "y": 374.2,
+     "w": 115.4,
+     "h": 32.2,
+     "text": "Save to my shelf"
+    },
+    "myshelf": {
+     "x": 418.1,
+     "y": 23,
+     "w": 101.9,
+     "h": 39,
+     "text": "My shelf\n0"
+    }
+   }
+  },
+  "detail-source": {
+   "url": "/resources/phosphor-icons/",
+   "scrollY": 1500,
+   "boxes": {
+    "closer": {
+     "x": 45,
+     "y": 64,
+     "w": 450,
+     "h": 34.5,
+     "text": "A closer look"
+    },
+    "tags": {
+     "x": 45,
+     "y": 339.3,
+     "w": 49.2,
+     "h": 24.5,
+     "text": "Design"
+    },
+    "visit": {
+     "x": 45,
+     "y": 388.8,
+     "w": 220,
+     "h": 56,
+     "text": "Visit website\n(opens in a new tab)"
+    }
+   }
+  },
+  "detail-saved": {
+   "url": "/resources/phosphor-icons/",
+   "scrollY": 0,
+   "boxes": {
+    "save": {
+     "x": 20,
+     "y": 374.2,
+     "w": 122.1,
+     "h": 32.2,
+     "text": "Saved to my shelf"
+    },
+    "myshelf": {
+     "x": 418.1,
+     "y": 23,
+     "w": 101.9,
+     "h": 39,
+     "text": "My shelf\n1"
+    }
+   }
+  },
+  "shelf-saved": {
+   "url": "/resources/?saved=1",
+   "scrollY": 562,
+   "boxes": {
+    "count": {
+     "x": 20,
+     "y": 170,
+     "w": 105.1,
+     "h": 26.5,
+     "text": "1 resource on your shelf"
+    },
+    "savedOnly": {
+     "x": 337.9,
+     "y": 170,
+     "w": 69.1,
+     "h": 36,
+     "text": "Saved only"
+    },
+    "card": {
+     "x": 47,
+     "y": 569.7,
+     "w": 446,
+     "h": 33.5,
+     "text": "Phosphor Icons"
+    }
+   }
+  },
+  "prompt-copy": {
+   "url": "/resources/creative-brief/",
+   "scrollY": 820,
+   "boxes": {
+    "heading": {
+     "x": 40,
+     "y": 68.4,
+     "w": 460,
+     "h": 32.4,
+     "text": "Your starting point"
+    },
+    "copy": {
+     "x": 40,
+     "y": 117.8,
+     "w": 125.2,
+     "h": 42.2,
+     "text": "Copy prompt"
+    }
+   }
+  },
+  "prompt-copied": {
+   "url": "/resources/creative-brief/",
+   "scrollY": 820,
+   "boxes": {
+    "copy": {
+     "x": 40,
+     "y": 117.8,
+     "w": 125.2,
+     "h": 42.2,
+     "text": "Copy prompt"
+    }
+   }
+  },
+  "skill-copy": {
+   "url": "/resources/research-companion/",
+   "scrollY": 1190,
+   "boxes": {
+    "heading": {
+     "x": 40,
+     "y": 63,
+     "w": 460,
+     "h": 32.4,
+     "text": "The complete skill"
+    },
+    "copy": {
+     "x": 40,
+     "y": 112.3,
+     "w": 140.5,
+     "h": 42.2,
+     "text": "Copy SKILL.md"
+    }
+   }
+  },
+  "learning-top": {
+   "url": "/learning/anthropic-prompt-engineering/",
+   "scrollY": 0,
+   "boxes": {
+    "title": {
+     "x": 20,
+     "y": 280.6,
+     "w": 500,
+     "h": 92.9,
+     "text": "Better prompts, one experiment at a time"
+    },
+    "tocMap": {
+     "x": 40,
+     "y": 632.9,
+     "w": 143.4,
+     "h": 19,
+     "text": "A map of the nine chapters"
+    },
+    "original": {
+     "x": 20,
+     "y": 839.7,
+     "w": 127.9,
+     "h": 35.9,
+     "text": "Original tutorial\n(opens in a new tab)"
+    }
+   }
+  },
+  "learning-chapters": {
+   "url": "/learning/anthropic-prompt-engineering/",
+   "scrollY": 2560,
+   "boxes": {
+    "map": {
+     "x": 20,
+     "y": 57.1,
+     "w": 500,
+     "h": 33.5,
+     "text": "A map of the nine chapters"
+    },
+    "first": {
+     "x": 122,
+     "y": 247.3,
+     "w": 99,
+     "h": 20,
+     "text": "Prompt structure"
+    },
+    "last": {
+     "x": 122,
+     "y": 928.2,
+     "w": 103,
+     "h": 20,
+     "text": "Complex prompts"
+    }
+   }
+  },
+  "about-contact": {
+   "url": "/about/",
+   "scrollY": 940,
+   "boxes": {
+    "touch": {
+     "x": 20,
+     "y": 50.9,
+     "w": 500,
+     "h": 33.5,
+     "text": "Get in touch"
+    },
+    "photo": {
+     "x": 25,
+     "y": 124.4,
+     "w": 90,
+     "h": 90,
+     "text": "/images/dawas-portrait.jpeg Dawas, curator of Dawas Shlef"
+    },
+    "name": {
+     "x": 140,
+     "y": 133,
+     "w": 329.1,
+     "h": 34.8,
+     "text": "Dawas"
+    },
+    "insta": {
+     "x": 140,
+     "y": 213.2,
+     "w": 158.2,
+     "h": 40,
+     "text": "@dawas_tech\non Instagram (opens in a new tab)"
+    }
+   }
+  },
+  "library-phosphor": {
+   "url": "/resources/?type=website&q=Design&sort=newest",
+   "scrollY": 1650,
+   "boxes": {
+    "title": {
+     "x": 47,
+     "y": 560.4,
+     "w": 178,
+     "h": 33.5,
+     "text": "Phosphor Icons (glyph width measured from pixels)"
+    },
+    "card": {
+     "x": 20,
+     "y": 215.7,
+     "w": 500,
+     "h": 510.3,
+     "text": "Phosphor Icons card"
+    }
+   }
+  }
+ },
+ "storageBefore": [
+  "ai-shelf:saved:v1"
+ ],
+ "storageAfter": []
+}
